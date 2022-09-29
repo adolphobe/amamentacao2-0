@@ -24,16 +24,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
   
   <!-- Facebook Pixel Code -->
+
+<script type="text/javascript" src="/script/pixel.js"></script>
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '770729754249209');
   fbq('track', 'PageView');
 
 //3 minutos
@@ -82,10 +75,7 @@ function AddToCart(){
   fbq('track', 'AddToCart');
 }
 </script>
-<noscript>
-  <img height="1" width="1" style="display:none" 
-       src="https://www.facebook.com/tr?id=770729754249209&ev=PageView&noscript=1"/>
-</noscript>
+
 <!-- End Facebook Pixel Code -->
   
   <style>
@@ -123,8 +113,8 @@ function AddToCart(){
     </div>
 
     <div class="mostrar" style="margin-top:30px;">
-    <a href="#" class="a-btn" style="text-decoration: none;" onclick="AddToCart();">
-        <span class="span-btn">SIM, QUERO TER ACESSO <br> À LINGUAGEM DO DESEJO</span>
+    <a href="ic.html" class="a-btn" style="text-decoration: none;" onclick="AddToCart();">
+        <span class="span-btn">SIM, QUERO TER ACESSO <br> AO MATERIAL</span>
         <span class="span-btn2">(Atenção: vagas limitadas)</span>
       </a>
     </div>
@@ -482,14 +472,15 @@ function AddToCart(){
     <div class="aviso" onclick="subir();"><strong>ATENÇÃO:</strong> O VÍDEO ACIMA ESTÁ SENDO REPRODUZIDO...  <img src="img/play black.webp" width="10"></div>
 
 
-    <div class="botao_baixo">
+    <!-- <div class="botao_baixo">
     <div class="mostrar" style="margin-top:30px;">
         <a href="#" class="a-btn" style="text-decoration: none;">
-            <span class="span-btn">SIM, QUERO TER ACESSO <br> À LINGUAGEM DO DESEJO</span>
+            <span class="span-btn">SIM, QUERO TER ACESSO <br> AO MATERIAL</span>
             <span class="span-btn2">(Atenção: vagas limitadas)</span>
           </a>
         </div>
     </div>
+  -->
 
 <div class="footer">Termos de Serviço | Politica de Privacidade</div>
   </body>
@@ -502,7 +493,7 @@ function AddToCart(){
 setTimeout(function(){
   $(".mostrar").css("display", "block");
   $(".aviso").css("display","none");
-}, 1374 * 1000); //segundos * 1k
+}, 1560 * 1000); //segundos * 1k
 
 
 //obfuscator
