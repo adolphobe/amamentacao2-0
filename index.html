@@ -29,28 +29,6 @@
 <script>
   fbq('track', 'PageView');
 
-//3 minutos
-  $(document).ready(function($) {
-    setTimeout(function() {
-      fbq('track', 'Assistiu3minutos');
-    }, 180 * 1000);
-});
-
-//10 minutos
-$(document).ready(function($) {
-    setTimeout(function() {
-      fbq('track', 'Assistiu10minutos');
-    }, 600 * 1000);
-});
-
-//20 minutos
-$(document).ready(function($) {
-    setTimeout(function() {
-      fbq('track', 'Assistiu20minutos');
-    }, 1200 * 1000);
-});
-
-
   //Verifica se botão "Ver mais 5 comentários" está visivel
   $(window).on('scroll',function() {
     if (checkVisible($('.fb-comments-loadmore'))) {
